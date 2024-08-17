@@ -2,7 +2,7 @@ name: scheduled night fuzz
 
 on:
   schedule:
-    - cron: "58 21 * * *"
+    - cron: "*/10 * * * *"
 
 env:
   FOUNDRY_PROFILE: night_fuzz
