@@ -2,5 +2,13 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+solc_version = "0.8.20"
+fuzz = { runs = 256, max_test_rejects = 65_536 }
+   
+# Default overrides for the CI runs.
+[profile.ci]                                       
+fuzz = { runs = 10_000, max_test_rejects = 350_000 }             
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# Default overrides for the CI night fuzz runs.
+[profile.night_fuzz]                                       
+fuzz = { runs = 1_000_000, max_test_rejects = 35_000_000 }      
