@@ -1,66 +1,35 @@
-## Foundry
+# <h1 align="center">🌙 Night-Fuzz: Foundry Fuzzing Template</h1>
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+<p align="center"><b>What's stopping you from fuzzing your tests overnight?</b></p>
 
-Foundry consists of:
+<p align="center">Night-fuzz is a template for turbocharging your smart contract testing with overnight fuzz campaigns.</p>
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🛠 Setup
 
-## Documentation
+1. Click **Use this template** on GitHub to create a new repository with this template.
+2. Clone your new repository locally.
 
-https://book.getfoundry.sh/
+## 📦 Dependencies
 
-## Usage
+- [Git](https://git-scm.com)
+- [Foundry](https://github.com/foundry-rs/foundry)
 
-### Build
+## 🧪 Running Tests
 
-```shell
-$ forge build
+For a quick test run:
+
+```bash
+forge test
 ```
 
-### Test
+## 🌙 Nightly Fuzzing
 
-```shell
-$ forge test
-```
+The `.github/workflows/nightFuzz.yml` file configures a GitHub Action to run extensive fuzzing every night at midnight UTC. This allows for much larger test runs without impacting your daily development workflow.
 
-### Format
+To customize the nightly fuzzing:
+1. Open `.github/workflows/nightly-fuzz.yml`
+2. Adjust the cron schedule or fuzzing parameters in `foundry.toml` as needed
 
-```shell
-$ forge fmt
-```
+## 📜 License
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the [MIT License](LICENSE).
