@@ -1,8 +1,9 @@
-# <h1 align="center">🌙 Night-Fuzz: Foundry Fuzzing Template</h1>
+# <h1 align="center">🌙 Night-Fuzz: Foundry Fuzzing Template  [![GitHub Repo stars](https://img.shields.io/github/stars/Patronum-Labs/night-fuzz?style=social)](https://github.com/Patronum-Labs/night-fuzz)</h1> 
 
 <p align="center"><b>What's stopping you from fuzzing your tests overnight?</b></p>
 
 <p align="center">Night-fuzz is a template for turbocharging your smart contract testing with overnight fuzz campaigns.</p>
+<p align="center"><b>Star this project on GitHub to make it reach more developers.</b></p> 
 
 ## 🛠 Setup
 
